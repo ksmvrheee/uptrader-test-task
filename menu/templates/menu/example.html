@@ -1,0 +1,25 @@
+{% load static %}
+{% load menu_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Menu Displaying Example</title>
+    <link rel="stylesheet" href="{% static 'menu/css/main.css/' %}" />
+  </head>
+  <body>
+  {% if menu_types %}
+    {% if 'main_menu' in menu_types %}
+      <h3>Main menu:</h3>
+      {% draw_menu 'main_menu' %}
+    {% endif %}
+    {% if 'secondary_menu' in menu_types %}
+      <h3>Secondary menu:</h3>
+      {% draw_menu 'secondary_menu' %}
+    {% endif %}
+    {% if 'main_menu' not in menu_types and 'secondary_menu' not in menu_types %}
+      <p>That menu does not exist [yet].</p>
+    {% endif %}
+  {% endif %}
+  </body>
+</html>

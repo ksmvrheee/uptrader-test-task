@@ -1,0 +1,57 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: underscore;
+  color: #333;
+}
+
+ul li.selected a {
+  background-color: #333;
+  color: #fff;
+}
+
+ul ul {
+  margin-left: 20px;
+  border: 1px dashed #ccc;
+  margin-top: 5px;
+}
+
+ul ul li {
+  margin-bottom: 5px;
+}
+
+ul ul li a {
+  padding: 5px;
+}
+
+ul ul ul {
+  margin-left: 20px;
+}
+
+ul {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 300px;
+}
+
+ul ul {
+  border: 1px dashed #ccc;
+  margin-top: 5px;
+}
